@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      example of a form with a variety of input types and attributes you can use
+      in HTML
+    </h1>
+    <form action="/submit" method="POST">
+      <!-- Text input -->
+      <label for="text-input">Text input:</label>
+      <input
+        type="text"
+        id="text-input"
+        name="text-input"
+        required
+        minlength="2"
+        maxlength="50"
+        placeholder="Enter text here"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Email input -->
+      <label for="email-input">Email input:</label>
+      <input
+        type="email"
+        id="email-input"
+        name="email-input"
+        required
+        placeholder="Enter email address"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Password input -->
+      <label for="password-input">Password input:</label>
+      <input
+        type="password"
+        id="password-input"
+        name="password-input"
+        required
+        minlength="8"
+        placeholder="Enter password"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Number input -->
+      <label for="number-input">Number input:</label>
+      <input
+        type="number"
+        id="number-input"
+        name="number-input"
+        required
+        min="0"
+        max="100"
+        placeholder="Enter number"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Date input -->
+      <label for="date-input">Date input:</label>
+      <input type="date" id="date-input" name="date-input" required />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Time input -->
+      <label for="time-input">Time input:</label>
+      <input type="time" id="time-input" name="time-input" required />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- URL input -->
+      <label for="url-input">URL input:</label>
+      <input
+        type="url"
+        id="url-input"
+        name="url-input"
+        required
+        placeholder="Enter URL"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Telephone input -->
+      <label for="tel-input">Telephone input:</label>
+      <input
+        type="tel"
+        id="tel-input"
+        name="tel-input"
+        required
+        placeholder="Enter phone number"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- File input -->
+      <label for="file-input">File input:</label>
+      <input
+        type="file"
+        id="file-input"
+        name="file-input"
+        accept=".pdf,.doc,.docx,.txt"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Color input -->
+      <label for="color-input">Color input:</label>
+      <input type="color" id="color-input" name="color-input" value="#ff0000" />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Range input -->
+      <label for="range-input">Range input:</label>
+      <input
+        type="range"
+        id="range-input"
+        name="range-input"
+        min="0"
+        max="100"
+        value="50"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Select input -->
+      <label for="select-input">Select input:</label>
+      <select id="select-input" name="select-input">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Textarea input -->
+      <label for="textarea-input">Textarea input:</label>
+      <textarea
+        id="textarea-input"
+        name="textarea-input"
+        required
+        minlength="10"
+        maxlength="200"
+        placeholder="Enter text here"
+      ></textarea>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Checkbox input -->
+      <label for="checkbox-input">Checkbox input:</label>
+      <input
+        type="checkbox"
+        id="checkbox-input"
+        name="checkbox-input"
+        value="checkbox-value"
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Radio inputs -->
+      <label for="radio-input1">Radio input 1:</label>
+      <input
+        type="radio"
+        id="radio-input1"
+        name="radio-input"
+        value="radio-value1"
+      />
+
+      <label for="radio-input2">Radio input 2:</label>
+      <input
+        type="radio"
+        id="radio-input2"
+        name="radio-input"
+        value="radio-value2"
+      />
+      <br />
+      <hr />
+      <br />
+      <!-- Radio inputs -->
+      <label>Do you prefer dogs or cats?</label><br />
+      <input type="radio" id="dogs" name="pets" value="dogs" />
+      <label for="dogs">Dogs</label><br />
+      <input type="radio" id="cats" name="pets" value="cats" />
+      <label for="cats">Cats</label>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Datetime input: Allows users to enter both date and time information. -->
+      <label for="datetime-input">Datetime input:</label>
+      <input
+        type="datetime-local"
+        id="datetime-input"
+        name="datetime-input"
+        required
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!--  Week input: Allows users to select a week.  -->
+      <label for="week-input">Week input:</label>
+      <input type="week" id="week-input" name="week-input" required />
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Month input: Allows users to select a month and year.  -->
+      <label for="month-input">Month input:</label>
+      <input type="month" id="month-input" name="month-input" required />
+
+      <br />
+      <hr />
+      <br />
+
+      <!--  Search input: Allows users to enter search terms.  -->
+      <label for="search-input">Search input:</label>
+      <input
+        type="search"
+        id="search-input"
+        name="search-input"
+        placeholder="Search..."
+      />
+
+      <br />
+      <hr />
+      <br />
+
+      <!--  Hidden input: Allows you to include data in the form submission without displaying it to the user.  -->
+      <input type="hidden" name="hidden-input" value="hidden-value" />
+
+      <br />
+      <hr />
+      <br />
+
+      <!--  Reset button: Allows users to reset the form to its initial values.  -->
+      <button type="reset">Reset</button>
+
+      <br />
+      <hr />
+      <br />
+
+      <!--  Image button: Allows users to submit the form by clicking on an image instead of a regular button.  -->
+      <button type="image" src="submit.png">Submit</button>
+
+      <br />
+      <hr />
+      <br />
+
+      <!--  Fieldset and legend: Allows you to group related form controls together and add a title or caption to the group.  -->
+      <fieldset>
+        <legend>Group Title</legend>
+        <!-- Add form controls here -->
+      </fieldset>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Checkboxes -->
+      <label>What is your favorite color? (Check all that apply)</label><br />
+      <input type="checkbox" id="red" name="color" value="red" />
+      <label for="red">Red</label><br />
+      <input type="checkbox" id="green" name="color" value="green" />
+      <label for="green">Green</label><br />
+      <input type="checkbox" id="blue" name="color" value="blue" />
+      <label for="blue">Blue</label>
+      <br />
+      <hr />
+      <br />
+
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
